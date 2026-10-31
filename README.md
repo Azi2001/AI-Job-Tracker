@@ -64,8 +64,8 @@ AI Job Tracker is a full-stack web application designed to help job seekers orga
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd job-tracker
+git clone https://github.com/Azi2001/AI-Job-Tracker.git
+cd AI-Job-Tracker
 ```
 
 ### 2. Configure the backend
