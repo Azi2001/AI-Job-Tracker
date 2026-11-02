@@ -32,7 +32,7 @@ AI Job Tracker is a full-stack web application designed to help job seekers orga
 - Highlight missing or less-demonstrated skills.
 - Receive suggestions for improving resume relevance.
 
-**AI technology:** Both AI features currently use Ollama with the `qwen2.5:3b` model.
+**AI Technology:** Both AI features currently use Ollama with the `qwen2.5:3b` model.
 
 > **Important:** When running this project locally, Ollama must be installed and the `qwen2.5:3b` model must be downloaded and running to use AI features. Other job-tracking features do not require Ollama. A public deployment requires a separately hosted AI service or model; the local Ollama installation is not automatically accessible to online users.
 
@@ -40,6 +40,42 @@ AI Job Tracker is a full-stack web application designed to help job seekers orga
 - Resume analysis history.
 - Light and dark themes.
 - PDF upload validation and size restrictions.
+
+## Application Screenshots
+
+### Dashboard
+![Dashboard](docs/screenshots/dashboard.png)
+
+### User Login
+![Login](docs/screenshots/login.png)
+
+### Profile and Career Preferences
+![Profile and Career Preferences](docs/screenshots/profile-preferences.png)
+
+### Resume Analysis History
+![Resume Analysis History](docs/screenshots/resume-history.png)
+
+### AI Resume Analysis Results
+![Resume Analysis Results](docs/screenshots/resume-analysis-result.png)
+
+![Resume Analysis Details](docs/screenshots/resume-analysis-details.png)
+
+### Resume–Job Description Matcher
+![Resume Job Matcher](docs/screenshots/resume-job-matcher.png)
+
+### Resume–Job Matching Results
+![Job Match Results](docs/screenshots/job-match-result.png)
+
+![Job Match Details](docs/screenshots/job-match-details.png)
+
+### Settings
+![Settings](docs/screenshots/settings.png)
+
+## Video Demonstration
+
+Watch the video demonstration to see the application's main features, including job application management, AI-powered resume analysis, and resume–job description matching.
+
+[Watch the AI Job Tracker Demo](docs/demo-video.mp4)
 
 ## Technology Stack
 
@@ -52,6 +88,26 @@ AI Job Tracker is a full-stack web application designed to help job seekers orga
 | Authentication | JWT |
 | AI Integration | Ollama, Qwen 2.5 3B |
 | Resume Processing | PDF text extraction |
+
+## What I Learned
+
+Developing AI Job Tracker helped me gain practical experience in full-stack application development and understand how different technologies work together.
+
+Through this project, I gained experience with:
+
+- Building user interfaces using React, JavaScript, and CSS.
+- Developing REST APIs using Python and FastAPI.
+- Connecting a frontend application to a backend API.
+- Working with PostgreSQL and SQLAlchemy for database operations.
+- Implementing user authentication using JWT and password hashing.
+- Managing user-specific records and application data.
+- Handling file uploads and extracting text from PDF documents.
+- Integrating a locally hosted AI model using Ollama.
+- Using AI to analyze resumes and compare resumes against job descriptions.
+- Managing project dependencies and environment variables.
+- Organizing and documenting a full-stack project using Git and GitHub.
+
+This project also helped me improve my problem-solving skills by working through development issues, debugging errors, and integrating different parts of the application.
 
 ## Local Installation
 
@@ -81,8 +137,8 @@ Create a `.env` file inside `backend/`, using `backend/.env.example` as a guide.
 
 Start the backend:
 
-```bash
-uvicorn main:app --reload
+```powershell
+python -m uvicorn main:app --reload
 ```
 
 The API will be available at `http://127.0.0.1:8000`.
@@ -122,6 +178,7 @@ Use `backend/.env.example` as a template. Never commit real credentials or secre
 AI Job Tracker is a portfolio project demonstrating full-stack development, database integration, user authentication, file handling, and local AI integration.
 
 ## Future Improvements
+
 - Public deployment with persistent database and file storage.
 - Hosted AI inference for users who do not have Ollama installed.
 - Automated testing.
