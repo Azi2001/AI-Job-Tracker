@@ -75,7 +75,7 @@ AI Job Tracker is a full-stack web application designed to help job seekers orga
 
 Watch the video demonstration to see the application's main features, including job application management, AI-powered resume analysis, and resume–job description matching.
 
-[Watch the AI Job Tracker Demo](docs/demo-video.mp4)
+[Watch the AI Job Tracker Demo](docs/demo-video.gif)
 
 ## Technology Stack
 
